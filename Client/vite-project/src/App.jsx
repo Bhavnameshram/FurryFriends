@@ -1,19 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Adopt from "./../Components/Adopt.jsx";
-import Adoptform from "./../Components/Adoptform.jsx";
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Adopt />} />
-        <Route path="/Adoptform" element={<Adoptform />} />
-      </Routes>
-    </BrowserRouter>
-  );
 import React from 'react'
-import Navbar from './Component/Navbar'
 import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar.jsx'
 import Signup from './Components/Signup.jsx'
 import Login from './Components/Login.jsx'
 
@@ -23,6 +11,7 @@ function App() {
       <Navbar/>
      <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Navbar />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
