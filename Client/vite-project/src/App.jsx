@@ -1,11 +1,12 @@
 
 import React from 'react'
 import { BrowserRouter , Routes, Route } from 'react-router-dom'
-import Navbar from './Components/Navbar.jsx'
-import Signup from './Components/Signup.jsx'
-import Login from './Components/Login.jsx'
-import Aboutsmain from './Page/Aboutsmain.jsx'
-// import AboutUs from './Components/AboutUs.jsx'
+// import Navbar from './Components/Navbar.jsx'
+// import Signup from './Components/Signup.jsx'
+// import Login from './Components/Login.jsx'
+// import Aboutsmain from './Page/Aboutsmain.jsx'
+import Homemain from './Page/Homemain';
+
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
 
      <BrowserRouter>
       <Navbar/>
-      {/* <AboutUs/> */}
-      <Aboutsmain/>
+      {/* <Aboutsmain/> */}
+      
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
